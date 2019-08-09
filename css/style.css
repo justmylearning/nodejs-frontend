@@ -1,0 +1,242 @@
+@media (max-width: 800px) {
+
+    header > ul{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    header > ul > li:not(:last-child){
+        margin-bottom: 10px;
+    }
+/* 
+    header > ul > li{
+        margin: auto;
+        border-left-style: none !important;
+    } */
+
+    /* header > ul{
+        flex-direction: column;
+    } */
+}
+
+@media (max-width: 600px) {
+
+    section > .btn-download-container{
+        flex-direction: column;
+        justify-content: center !important;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    footer > .issue-link-container{
+        flex-direction: column !important;
+    }
+
+    footer > .issue-link-container ul{
+        padding-top: 10px;
+        margin: auto;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #333;
+    font: 400 20px/1.5 'Source Sans Pro',Open Sans,Roboto,'San Francisco',Helvetica,Arial,sans-serif;
+}
+
+header{
+    background: #333;
+    width: 100%;
+}
+
+header > .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+header > .logo > img{
+    max-height: 75px;
+    max-width: 180px;
+}
+
+header > ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header > ul > li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+header > ul > li + li{
+    border-left-color: #ccc;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+header > ul > li > a{
+    font-size: 12px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+header > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+.foundation{
+    background: green;
+    border-left-style: none;
+    padding-bottom: 15px;
+    height: 18px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+section > p{
+    margin: 14px 0px;
+}
+
+section > p > a{
+    color: green;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+section > p > a:hover{
+    color: white;
+    background: green;
+}
+
+section > h2{
+    margin-top: 30px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+section > .btn-download-container > .btn-download > a{
+    padding: 10px 20px;
+    background: #026e00;
+    color: white;
+    margin: 0px 8px;
+}
+
+section > .btn-download-container > .btn-download > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 2px;
+    width: 220px;
+}
+
+section > .btn-download-container > .btn-download > a:hover{
+    background: #369634;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+section > .btn-download-container > .btn-download > a > small{
+    margin-top: 2px;
+    font-size: 1rem;
+}
+
+section > .btn-download-container{
+    display: flex;
+}
+
+section > .btn-download-container > .btn-download ul{
+    display: flex;
+    justify-content: center;
+}
+
+section > .btn-download-container > .btn-download > ul > li{
+    display: inline;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 5px;
+}
+
+section > .btn-download-container > .btn-download > ul > li > a{
+    text-decoration: none;
+    color: #51744e;
+}
+
+section > .btn-download-container > .btn-download > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background: #333;
+    padding: 20px 80px;
+}
+
+footer > .issue-link-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer > .issue-link-container > img{
+    width: 416px;
+    height: 16px;
+}
+
+footer > .issue-link-container > ul {
+    display: flex;
+    margin-left: auto;
+}
+
+footer > .issue-link-container > ul > li{
+    display: inline;
+    font-size: 14px;
+    margin: 0px 5px 2px 5px;
+}
+
+footer > .issue-link-container > ul > li > a{
+    color: #ccc;
+    text-decoration: none;
+    margin: 0px 2px;
+}
+
+footer > .issue-link-container > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+footer > p{
+    color: #ccc;
+    font-size: 14px;
+    margin: 14px 0px;
+}
+
+footer > p > a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
+footer > p + p{
+    margin: 0px 0px 5px 0px;
+}
